@@ -1,5 +1,12 @@
 import praw
 
+"""
+Uses praw reddit API
+
+This module finds subreddits that appear the most in r/all based on a time_filter
+and stores them in dictionary all_subs with their number of appearances.
+Also stores subreddits that appear more than num_of_posts/30 in top_subs
+"""
 
 class top_sub_info():
     def __init__(self, num_of_posts, time_filter):

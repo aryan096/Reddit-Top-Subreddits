@@ -1,5 +1,10 @@
 import matplotlib.pyplot as plt
 
+"""
+Uses matplotlib.pyplot
+This module plots the information from reddit_info as a bar graph.
+"""
+
 
 class plotter():
 
