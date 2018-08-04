@@ -1,5 +1,6 @@
 import praw
 
+
 class top_sub_info():
     def __init__(self, num_of_posts, time_filter):
         """
@@ -21,7 +22,6 @@ class top_sub_info():
         self.all_subs = {}
         self.get_info()
 
-
     def get_info(self):
         """
         for each top num_of_posts submissions in r/all with time_filter,
@@ -35,5 +35,5 @@ class top_sub_info():
                 self.all_subs[submission.subreddit.display_name] = 1
 
         for key, value in self.all_subs.items():
-            if value > self.num_of_posts/30:
+            if value > self.num_of_posts / 30:
                 self.top_subs[key] = value
